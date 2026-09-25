@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandhiya | UI/UX Designer & Front-End Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Sandhiya - UI/UX Designer & Front-End Developer specializing in Figma Design Systems, Human-Centered Web Apps, and React interfaces.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       NAVBAR
+       ========================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <div class="logo-icon">S</div>
+        <span>Sandhiya<span class="gradient-text">.ux</span></span>
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#studio" class="nav-link">Color Studio</a></li>
+        <li><a href="#process" class="nav-link">Process</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#timeline" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Palette Switcher Widget -->
+        <div class="palette-picker" title="Switch Theme Color Palette">
+          <button class="palette-btn p-iris active" data-set-theme="iris" title="Obsidian Iris (Default)"></button>
+          <button class="palette-btn p-emerald" data-set-theme="emerald" title="Cyber Emerald"></button>
+          <button class="palette-btn p-sunset" data-set-theme="sunset" title="Sunset Amethyst"></button>
+          <button class="palette-btn p-light" data-set-theme="light" title="Frosted Pearl Light"></button>
+        </div>
+
+        <a href="#contact" class="btn btn-primary">Hire Me ✦</a>
+        <button class="mobile-toggle" aria-label="Toggle Menu">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-text-content">
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          <span>Open for UI/UX & Front-End Opportunities</span>
+        </div>
+
+        <h1 class="hero-title">
+          Crafting <span class="gradient-text">Human-Centered</span> Digital Experiences
+        </h1>
+
+        <p class="hero-description">
+          Hi, I'm <strong>Sandhiya</strong> — a UI/UX Designer & Front-End Developer. I bridge the gap between creative Figma wireframing, design systems, and responsive React/JS web code to build stunning, efficient user interfaces.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">Explore Case Studies 🚀</a>
+          <a href="#studio" class="btn btn-secondary">Color Studio 🎨</a>
+          <button class="btn btn-secondary" id="copyEmailBtn">Copy Email 📋</button>
+        </div>
+
+        <div class="stats-bar">
+          <div class="stat-item">
+            <h4>B.Tech IT</h4>
+            <p>Jaya Engg. College (2023-2027)</p>
+          </div>
+          <div class="stat-item">
+            <h4>Figma & Canva</h4>
+            <p>UI/UX Design Mastery</p>
+          </div>
+          <div class="stat-item">
+            <h4>React & HTML/CSS</h4>
+            <p>Clean Front-End Code</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Showcase -->
+      <div class="hero-visual">
+        <div class="hero-card-frame">
+          <img src="./assets/images/avatar.jpg" alt="Sandhiya Creative Workspace" class="hero-avatar-img">
+        </div>
+
+        <!-- Floating Skill Badges -->
+        <div class="floating-badge fb-1">
+          <span>🎨</span>
+          <span>Figma Systems</span>
+        </div>
+        <div class="floating-badge fb-2">
+          <span>💻</span>
+          <span>React & JS</span>
+        </div>
+        <div class="floating-badge fb-3">
+          <span>✨</span>
+          <span>User Research</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ABOUT ME SUMMARY
+       ========================================== -->
+  <section class="studio-section" id="about">
+    <div class="container">
+      <div class="section-tag">✦ About Sandhiya</div>
+      <h2 class="section-title">Merging Aesthetics with Technical Precision</h2>
+      <p class="section-subtitle">
+        I am a passionate B.Tech Information Technology student combining creative design thinking from Figma & Canva with technical implementation in HTML, CSS, JavaScript, and React. My goal is to craft intuitive digital solutions driven by data, user research, and modern aesthetics.
+      </p>
+
+      <div class="skills-pills" style="margin-top: 1.5rem;">
+        <span class="skill-pill">📍 Chennai, India</span>
+        <span class="skill-pill">🎓 B.Tech IT (2023-2027)</span>
+        <span class="skill-pill">✉️ sandhiya7853@gmail.com</span>
+        <span class="skill-pill">📞 +91 9488433084</span>
+        <span class="skill-pill">💼 UI/UX Intern @ Matex Technologies</span>
+        <span class="skill-pill">🌐 Web Dev Intern @ Redback IT</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       INTERACTIVE COLOR PALETTE & UI STUDIO
+       ========================================== -->
+  <section class="studio-section" id="studio">
+    <div class="container">
+      <div class="section-tag">🎨 Interactive UI Studio</div>
+      <h2 class="section-title">Dynamic Design Tokens & Color Palettes</h2>
+      <p class="section-subtitle">
+        Explore Sandhiya's hand-curated color systems. Switch color themes in real-time or test the interactive UI component tokens below.
+      </p>
+
+      <div class="studio-grid">
+        <!-- Palette Token Swatches Card -->
+        <div class="palette-preview-card">
+          <h3>Current Theme Swatches</h3>
+          <p style="color: var(--text-sub); font-size: 0.9rem;">
+            Click the palette circles in the navbar to watch the dynamic CSS variables transform live.
+          </p>
+
+          <div class="swatch-group">
+            <div class="swatch-item">
+              <div class="swatch-box sb-primary"></div>
+              <label>Primary</label>
+              <code>--primary</code>
+            </div>
+            <div class="swatch-item">
+              <div class="swatch-box sb-secondary"></div>
+              <label>Secondary</label>
+              <code>--secondary</code>
+            </div>
+            <div class="swatch-item">
+              <div class="swatch-box sb-accent"></div>
+              <label>Accent Mint</label>
+              <code>--accent</code>
+            </div>
+            <div class="swatch-item">
+              <div class="swatch-box sb-card"></div>
+              <label>Glass Surface</label>
+              <code>--bg-card</code>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Component Playground -->
+        <div class="component-playground">
+          <div class="playground-header">
+            <h3>Interactive UI Token Playground</h3>
+            <span class="section-tag" style="margin-bottom:0;">Live Demo</span>
+          </div>
+
+          <p id="demoInputLabel" style="font-size: 0.9rem; color: var(--text-sub);">
+            Type something to test dynamic UI state updates:
+          </p>
+
+          <div class="ui-row">
+            <input type="text" id="demoInput" class="custom-input" placeholder="Enter custom UI label text...">
+            <button class="btn btn-primary" id="demoBtn">Test Interaction</button>
+          </div>
+
+          <div class="ui-row" style="margin-top: 0.5rem;">
+            <span class="skill-pill" style="border-color: var(--primary);">✓ Active Token</span>
+            <span class="skill-pill" style="border-color: var(--secondary);">✨ Hover Glow</span>
+            <span class="skill-pill" style="border-color: var(--accent);">⚡ Cyber Mint</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       UX DESIGN PROCESS
+       ========================================== -->
+  <section class="process-section" id="process">
+    <div class="container">
+      <div class="section-tag">⚡ Methodology</div>
+      <h2 class="section-title">My 4-Step UI/UX Design Process</h2>
+      <p class="section-subtitle">
+        Every pixel has a purpose. Here is how I transform raw ideas and requirements into high-impact digital experiences.
+      </p>
+
+      <div class="process-grid">
+        <div class="process-card">
+          <span class="process-step">01</span>
+          <div class="process-icon">🔍</div>
+          <h3>Empathize & Research</h3>
+          <p>Analyzing user needs, interviewing target audiences, creating personas, and mapping user journeys to define core problems.</p>
+        </div>
+
+        <div class="process-card">
+          <span class="process-step">02</span>
+          <div class="process-icon">✏️</div>
+          <h3>Wireframe & Flow</h3>
+          <p>Constructing information architecture, sketch low-fidelity wireframes, and validating user pathways before high-fidelity visual design.</p>
+        </div>
+
+        <div class="process-card">
+          <span class="process-step">03</span>
+          <div class="process-icon">🎨</div>
+          <h3>Figma UI & Prototype</h3>
+          <p>Designing modern high-fidelity interfaces, color palettes, micro-interactions, responsive grid layouts, and interactive Figma prototypes.</p>
+        </div>
+
+        <div class="process-card">
+          <span class="process-step">04</span>
+          <div class="process-icon">💻</div>
+          <h3>Develop & Test</h3>
+          <p>Translating UI designs into clean HTML5, CSS3, JavaScript, and React code with accessibility standards (WCAG) and cross-device testing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PROJECTS & CASE STUDIES
+       ========================================== -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <div class="section-tag">📂 Featured Portfolio</div>
+      <h2 class="section-title">Featured UI/UX Projects & Case Studies</h2>
+      <p class="section-subtitle">
+        A showcase of human-centered digital products, healthcare portals, e-commerce AI concepts, and design systems.
+      </p>
+
+      <!-- Filter Buttons -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="healthcare">Healthcare UX</button>
+        <button class="filter-btn" data-filter="ecommerce">E-Commerce AI</button>
+        <button class="filter-btn" data-filter="system">Design Systems</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+      </div>
+
+      <!-- Project Grid -->
+      <div class="projects-grid">
+
+        <!-- Project 1: Digital Medicard System -->
+        <div class="project-card" data-category="healthcare">
+          <div class="project-thumb-wrapper">
+            <span class="project-category">Healthcare UI/UX</span>
+            <img src="./assets/images/medicard.jpg" alt="Digital Medicard System UI Mockup" class="project-thumb">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Digital Medicard System</h3>
+            <p class="project-desc">
+              Created a digital health record management portal replacing paper medical cards. Enables doctors and patients to securely store, access, and share patient medical data with instant QR cards.
+            </p>
+            <div class="tag-list">
+              <span class="tag">UI/UX Design</span>
+              <span class="tag">Healthcare Portal</span>
+              <span class="tag">Figma High-Fi</span>
+              <span class="tag">React</span>
+              <span class="tag">MySQL</span>
+            </div>
+            <div class="project-footer">
+              <span class="link-btn open-case-study" data-project="medicard">View Case Study ➔</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Personalized Marketing & Customer Experience -->
+        <div class="project-card" data-category="ecommerce">
+          <div class="project-thumb-wrapper">
+            <span class="project-category">AI E-Commerce UX</span>
+            <img src="./assets/images/ecommerce.jpg" alt="E-Commerce AI UX Mockup" class="project-thumb">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Personalized Shopping & Marketing UX</h3>
+            <p class="project-desc">
+              Designed an intelligent e-commerce application interface that suggests products based on user interests, improving customer engagement, shopping satisfaction, and conversion rates.
+            </p>
+            <div class="tag-list">
+              <span class="tag">E-Commerce UX</span>
+              <span class="tag">AI Recommendations</span>
+              <span class="tag">User Analytics</span>
+              <span class="tag">Figma</span>
+            </div>
+            <div class="project-footer">
+              <span class="link-btn open-case-study" data-project="ecommerce">View Case Study ➔</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Aurora UI Design System -->
+        <div class="project-card" data-category="system">
+          <div class="project-thumb-wrapper">
+            <span class="project-category">Design System</span>
+            <img src="./assets/images/design-system.jpg" alt="Aurora UI Design System" class="project-thumb">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Aurora UI Design System & Tokens</h3>
+            <p class="project-desc">
+              A comprehensive Figma design system featuring color tokens, typography hierarchy, component variants (buttons, cards, inputs), and accessible WCAG color palettes for scalable apps.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Design Tokens</span>
+              <span class="tag">Figma Auto-Layout</span>
+              <span class="tag">CSS Variables</span>
+              <span class="tag">WCAG AA</span>
+            </div>
+            <div class="project-footer">
+              <span class="link-btn open-case-study" data-project="aurora-ui">View System Tokens ➔</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Personal Portfolio Website -->
+        <div class="project-card" data-category="web">
+          <div class="project-thumb-wrapper">
+            <span class="project-category">Web Development</span>
+            <img src="./assets/images/avatar.jpg" alt="Personal Portfolio Website" class="project-thumb">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Personal UI/UX Portfolio Website</h3>
+            <p class="project-desc">
+              A minimal, responsive portfolio built with HTML, CSS, and JavaScript. Showcases UI/UX projects, interactive theme palette studio, skill breakdown, and contact integration.
+            </p>
+            <div class="tag-list">
+              <span class="tag">HTML5 / CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Glassmorphism</span>
+              <span class="tag">Responsive</span>
+            </div>
+            <div class="project-footer">
+              <a href="#hero" class="link-btn">Scroll to Top ⬆</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CASE STUDY SLIDE-OVER MODAL
+       ========================================== -->
+  <div class="modal-overlay" id="caseStudyModal">
+    <div class="modal-container">
+      <button class="modal-close" aria-label="Close Case Study">&times;</button>
+      
+      <span class="section-tag" id="modalCategory">Healthcare UI/UX</span>
+      <h2 id="modalTitle" style="font-size: 2rem; margin-top: 0.5rem;">Case Study Title</h2>
+      
+      <img src="" id="modalHeroImg" alt="Case Study Mockup" class="modal-hero-img">
+
+      <div class="case-grid">
+        <div class="case-main">
+          <h3 style="margin-bottom: 0.5rem; color: var(--accent);">📌 Problem Statement</h3>
+          <p id="modalProblem" style="color: var(--text-sub); margin-bottom: 1.5rem;"></p>
+
+          <h3 style="margin-bottom: 0.5rem; color: var(--primary);">💡 Design Solution</h3>
+          <p id="modalSolution" style="color: var(--text-sub); margin-bottom: 1.5rem;"></p>
+
+          <h3 style="margin-bottom: 0.8rem; color: var(--secondary);">✨ Deliverables</h3>
+          <ul id="modalDeliverables" style="color: var(--text-sub); display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1.5rem;"></ul>
+
+          <h3 style="margin-bottom: 0.8rem; color: var(--accent);">🚀 Key Features & Results</h3>
+          <ul id="modalFeatures" style="color: var(--text-sub); display: flex; flex-direction: column; gap: 0.4rem;"></ul>
+        </div>
+
+        <div class="case-sidebar">
+          <div class="sidebar-item">
+            <label>My Role</label>
+            <span id="modalRole">UI/UX Designer</span>
+          </div>
+          <div class="sidebar-item">
+            <label>Timeline</label>
+            <span id="modalTimeline">2 Months</span>
+          </div>
+          <div class="sidebar-item">
+            <label>Tools Used</label>
+            <span id="modalTools">Figma, Canva, React, JS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       SKILLS & TOOLKIT
+       ========================================== -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <div class="section-tag">🛠 Toolkit & Competencies</div>
+      <h2 class="section-title">Design & Technical Skillset</h2>
+      <p class="section-subtitle">
+        Combining creative UI/UX methodologies with front-end code and data intelligence tools.
+      </p>
+
+      <div class="skills-grid">
+        
+        <!-- UI/UX Design Category -->
+        <div class="skill-category-card">
+          <h3><span>🎨</span> UI/UX Design</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">Figma (Advanced)</span>
+            <span class="skill-pill">Canva</span>
+            <span class="skill-pill">Wireframing</span>
+            <span class="skill-pill">High-Fi Prototyping</span>
+            <span class="skill-pill">Design Systems</span>
+            <span class="skill-pill">User Research</span>
+            <span class="skill-pill">Information Architecture</span>
+            <span class="skill-pill">Micro-Interactions</span>
+            <span class="skill-pill">Mobile & Web UI</span>
+          </div>
+        </div>
+
+        <!-- Web Development Category -->
+        <div class="skill-category-card">
+          <h3><span>💻</span> Front-End Web Dev</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">HTML5</span>
+            <span class="skill-pill">CSS3 (Flexbox/Grid)</span>
+            <span class="skill-pill">JavaScript (ES6+)</span>
+            <span class="skill-pill">React</span>
+            <span class="skill-pill">Node.js</span>
+            <span class="skill-pill">Responsive Design</span>
+            <span class="skill-pill">DOM Manipulation</span>
+          </div>
+        </div>
+
+        <!-- Database & Analytics Category -->
+        <div class="skill-category-card">
+          <h3><span>📊</span> Data & Management</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">MySQL</span>
+            <span class="skill-pill">MongoDB</span>
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">Power BI</span>
+            <span class="skill-pill">Data-Driven UX</span>
+            <span class="skill-pill">MS Word / PowerPoint / Excel</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       EXPERIENCE & EDUCATION TIMELINE
+       ========================================== -->
+  <section class="timeline-section" id="timeline">
+    <div class="container">
+      <div class="section-tag">💼 Journey</div>
+      <h2 class="section-title">Experience & Education</h2>
+      <p class="section-subtitle">
+        My professional timeline across UI/UX internships, web development, and academic milestones.
+      </p>
+
+      <div class="timeline-grid">
+        
+        <!-- Work Experience Timeline -->
+        <div>
+          <h3 style="margin-bottom: 2rem; display: flex; align-items: center; gap: 0.6rem;">
+            <span>💼</span> Work Experience
+          </h3>
+          <div class="timeline">
+            
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-date">1 Month Internship</div>
+                <h4 class="timeline-title">UI/UX Design Intern</h4>
+                <div class="timeline-company">Matex Technologies</div>
+                <p style="color: var(--text-sub); font-size: 0.9rem;">
+                  Crafted wireframes, high-fidelity Figma user interface designs, visual assets, and prototype flows for client software applications.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-date">2025 • 1 Month Internship</div>
+                <h4 class="timeline-title">Web Development Intern</h4>
+                <div class="timeline-company">Redback IT Solutions Private Limited</div>
+                <p style="color: var(--text-sub); font-size: 0.9rem;">
+                  Developed responsive web front-end components using HTML, CSS, and JavaScript with modern standards and cross-browser testing.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-date">Current</div>
+                <h4 class="timeline-title">Operation Executive</h4>
+                <div class="timeline-company">O2 Saver</div>
+                <p style="color: var(--text-sub); font-size: 0.9rem;">
+                  Managing operational workflows, coordinating digital documentation, and optimizing organizational processes.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Education & Certifications Timeline -->
+        <div>
+          <h3 style="margin-bottom: 2rem; display: flex; align-items: center; gap: 0.6rem;">
+            <span>🎓</span> Education & Certifications
+          </h3>
+          <div class="timeline">
+            
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-date">2023 - 2027</div>
+                <h4 class="timeline-title">B.Tech Information Technology</h4>
+                <div class="timeline-company">Jaya Engineering College</div>
+                <p style="color: var(--text-sub); font-size: 0.9rem;">
+                  Specializing in software engineering, human-computer interaction, web technologies, database management, and data analytics.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-date">Certifications</div>
+                <h4 class="timeline-title">Specialized Certifications</h4>
+                <div class="timeline-company">NPTEL, Naan Mudhalvan, GUVI</div>
+                <ul style="color: var(--text-sub); font-size: 0.88rem; list-style: disc; padding-left: 1.2rem; margin-top: 0.5rem;">
+                  <li>NPTEL - Programming in Java (Elite)</li>
+                  <li>GUVI Workshop in Data-Driven Decision Making</li>
+                  <li>Naan Mudhalvan - Unity Game Development</li>
+                  <li>Naan Mudhalvan - Advanced AIML & EBPL</li>
+                  <li>SWAIT.AI Learnathon Completion Program</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CONTACT & HIRE ME
+       ========================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-card-box">
+        
+        <div class="contact-info-side">
+          <div class="section-tag">📬 Get In Touch</div>
+          <h2>Let's Design Something Amazing Together!</h2>
+          <p>
+            Whether you have a UI/UX project, internship opportunity, or front-end collaboration in mind, my inbox is always open.
+          </p>
+
+          <div class="contact-detail-item">
+            <div class="contact-icon-box">✉️</div>
+            <div>
+              <div style="font-size: 0.8rem; color: var(--text-sub); font-weight: normal;">Email</div>
+              <span>sandhiya7853@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="contact-detail-item">
+            <div class="contact-icon-box">📞</div>
+            <div>
+              <div style="font-size: 0.8rem; color: var(--text-sub); font-weight: normal;">Phone</div>
+              <span>+91 9488433084</span>
+            </div>
+          </div>
+
+          <div class="contact-detail-item">
+            <div class="contact-icon-box">🔗</div>
+            <div>
+              <div style="font-size: 0.8rem; color: var(--text-sub); font-weight: normal;">LinkedIn</div>
+              <a href="https://www.linkedin.com/in/sandhiya-s-1158752a5" target="_blank" style="color: var(--primary);">linkedin.com/in/sandhiya-s</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form-side" id="contactForm">
+          <div class="form-group">
+            <label for="formName">Your Name</label>
+            <input type="text" id="formName" class="form-control" placeholder="e.g. Alex Morgan" required>
+          </div>
+
+          <div class="form-group">
+            <label for="formEmail">Your Email</label>
+            <input type="email" id="formEmail" class="form-control" placeholder="e.g. alex@company.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="formMessage">Project Details / Message</label>
+            <textarea id="formMessage" class="form-control" placeholder="Tell me about your project, timeline, or open role..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message 🚀</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Sandhiya • UI/UX Designer & Front-End Developer. Handcrafted with passion.</p>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
