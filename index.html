@@ -19,6 +19,10 @@
   <!-- ==========================================
        NAVBAR
        ========================================== -->
+  <!-- Mobile Navigation Backdrop Overlay -->
+  <div class="nav-backdrop" id="navBackdrop"></div>
+
+  <!-- Navbar -->
   <nav class="navbar" id="navbar">
     <div class="container nav-container">
       <a href="#hero" class="brand-logo">
@@ -26,27 +30,53 @@
         <span>Sandhiya<span class="gradient-text">.ux</span></span>
       </a>
 
-      <ul class="nav-menu">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#studio" class="nav-link">Color Studio</a></li>
-        <li><a href="#process" class="nav-link">Process</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#timeline" class="nav-link">Experience</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
+      <!-- Navigation Drawer (Responsive Mobile & Desktop) -->
+      <div class="nav-menu-wrapper" id="navMenuWrapper">
+        <div class="mobile-drawer-header">
+          <a href="#hero" class="brand-logo">
+            <div class="logo-icon">S</div>
+            <span>Sandhiya<span class="gradient-text">.ux</span></span>
+          </a>
+          <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close Menu">&times;</button>
+        </div>
+
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#studio" class="nav-link">Color Studio</a></li>
+          <li><a href="#process" class="nav-link">Process</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#timeline" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="mobile-drawer-footer">
+          <div class="drawer-theme-title">Theme Color Palette</div>
+          <div class="palette-picker mobile-palette" title="Switch Theme Color Palette">
+            <button class="palette-btn p-iris active" data-set-theme="iris" title="Obsidian Iris"></button>
+            <button class="palette-btn p-emerald" data-set-theme="emerald" title="Cyber Emerald"></button>
+            <button class="palette-btn p-sunset" data-set-theme="sunset" title="Sunset Amethyst"></button>
+            <button class="palette-btn p-light" data-set-theme="light" title="Frosted Pearl Light"></button>
+          </div>
+          <a href="#contact" class="btn btn-primary mobile-hire-btn">Hire Me ✦</a>
+        </div>
+      </div>
 
       <div class="nav-actions">
-        <!-- Palette Switcher Widget -->
-        <div class="palette-picker" title="Switch Theme Color Palette">
+        <!-- Desktop Palette Switcher Widget -->
+        <div class="palette-picker desktop-palette" title="Switch Theme Color Palette">
           <button class="palette-btn p-iris active" data-set-theme="iris" title="Obsidian Iris (Default)"></button>
           <button class="palette-btn p-emerald" data-set-theme="emerald" title="Cyber Emerald"></button>
           <button class="palette-btn p-sunset" data-set-theme="sunset" title="Sunset Amethyst"></button>
           <button class="palette-btn p-light" data-set-theme="light" title="Frosted Pearl Light"></button>
         </div>
 
-        <a href="#contact" class="btn btn-primary">Hire Me ✦</a>
-        <button class="mobile-toggle" aria-label="Toggle Menu">☰</button>
+        <a href="#contact" class="btn btn-primary desktop-hire-btn">Hire Me ✦</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
   </nav>

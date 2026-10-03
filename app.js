@@ -70,26 +70,59 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Mobile menu toggle
-  const mobileToggle = document.querySelector('.mobile-toggle');
-  const navMenu = document.querySelector('.nav-menu');
+  // Mobile drawer navigation controls
+  const mobileToggle = document.getElementById('mobileToggle');
+  const drawerCloseBtn = document.getElementById('drawerCloseBtn');
+  const navMenuWrapper = document.getElementById('navMenuWrapper');
+  const navBackdrop = document.getElementById('navBackdrop');
+
+  function openMobileMenu() {
+    if (navMenuWrapper && navBackdrop) {
+      navMenuWrapper.classList.add('open');
+      navBackdrop.classList.add('active');
+      if (mobileToggle) mobileToggle.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeMobileMenu() {
+    if (navMenuWrapper && navBackdrop) {
+      navMenuWrapper.classList.remove('open');
+      navBackdrop.classList.remove('active');
+      if (mobileToggle) mobileToggle.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  }
 
   if (mobileToggle) {
     mobileToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('open');
-      const isOpen = navMenu.classList.contains('open');
-      mobileToggle.innerHTML = isOpen ? '✕' : '☰';
+      if (navMenuWrapper.classList.contains('open')) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
     });
   }
 
-  // Close mobile nav when clicking a link
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      if (navMenu.classList.contains('open')) {
-        navMenu.classList.remove('open');
-        mobileToggle.innerHTML = '☰';
-      }
-    });
+  if (drawerCloseBtn) {
+    drawerCloseBtn.addEventListener('click', closeMobileMenu);
+  }
+
+  if (navBackdrop) {
+    navBackdrop.addEventListener('click', closeMobileMenu);
+  }
+
+  // Close mobile nav when clicking any link inside drawer (including mobile-hire-btn)
+  const drawerLinks = document.querySelectorAll('.nav-menu-wrapper a');
+  drawerLinks.forEach(link => {
+    link.addEventListener('click', closeMobileMenu);
+  });
+
+  // ESC key to close mobile drawer or case study modal
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeMobileMenu();
+    }
   });
 
   /* --------------------------------------------------------------------------
